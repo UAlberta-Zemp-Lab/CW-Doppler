@@ -5,9 +5,9 @@ function [phaseDelays, phaseErrors] = generatePhaseDelays(elementPositions, foca
     % geometry of the transducer by this relation: Phase distance = N * waveLength / 16,
     % where N is the discrete phase delay, N = 0, 1, 2, ..., 15.
     arguments
-        elementPositions (:, :) Position; % Position matrix with N x M size corresponding to number of transducer elements
-        focalPointPosition Position;      % Position of focal point relative to origin (center of transducer, +Z is outward from probe toward insonified region)
-        waveLength double                 % Wavelength of carrier frequency
+        elementPositions (:, :) Vector; % Position matrix with N x M size corresponding to number of transducer elements
+        focalPointPosition Vector;      % Position of focal point relative to origin (center of transducer, +Z is outward from probe toward insonified region)
+        waveLength double               % Wavelength of carrier frequency
     end                                   
 
     phaseMap = zeros(1, 16);

@@ -10,10 +10,10 @@ function positions = generateElements(xElements, yElements, pitch)
         pitch double     % Pitch between the elements of the transducer
     end
     index = 1;
-    positions(1 : xElements * yElements) = Position(0, 0, 0);
+    positions(1 : xElements * yElements) = Vector(0, 0, 0);
     for x = -((xElements - 1) / 2) * pitch : pitch : ((xElements - 1) / 2) * pitch
         for y = ((yElements - 1) / 2) * pitch : -pitch : -((yElements - 1) / 2) * pitch
-            positions(index) = Position(x, y, 0);
+            positions(index) = Vector(x, y, 0);
             index = index + 1;
         end
     end

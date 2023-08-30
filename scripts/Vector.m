@@ -1,6 +1,6 @@
-classdef Position
-    %Position 
-    % 3D position class representation
+classdef Vector
+    %Vector 
+    % 3D vector class representation
     % TODO: Add helper functions, i.e., cross product, dot product,
     % projections, etc
 
@@ -11,7 +11,7 @@ classdef Position
     end
 
     methods
-        function obj = Position(x_, y_, z_)
+        function obj = Vector(x_, y_, z_)
             arguments 
                 x_ double;
                 y_ double;
